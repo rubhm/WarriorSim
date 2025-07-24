@@ -881,6 +881,20 @@ var gear = {
       "p": "inv_shoulder_01"
     },
     {
+      "name": "Taut Dragonhide Shoulderpads",
+      "source": "BWL",
+      "phase": 3,
+      "ac": 170,
+      "sta": 30,
+      "ap": 46,      
+      "id": 19389,
+      "type": "Leather",
+      "slot": "shoulder",
+      "q": "4",
+      "i": "77",      
+      "p": "inv_shoulder_08"
+    },
+    {
       "name": "Bloodsoaked Pauldrons",
       "str": 16,
       "sta": 16,
@@ -1825,7 +1839,7 @@ var gear = {
       "crit": 1,
       "ap": 76,
       "ac": 311,
-      "source": "AQ20",
+      "source": "Crafting",
       "phase": 5,
       "id": 22191,
       "q": "4",
@@ -3255,6 +3269,17 @@ var gear = {
       "q": "4",
       "i": "68",
       "p": "inv_pants_plate_21"
+    },
+    {
+      "id": 21316,
+      "type": "Plate",
+      "slot": "legs",
+      "q": "2",
+      "i": "55",
+      "name": "Leggings of the Ursa",
+      "p": "inv_pants_mail_10",
+      "str": 17,
+      "crit": 1
     },
     {
       "name": "Cadaverous Leggings",
