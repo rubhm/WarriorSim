@@ -230,7 +230,10 @@ class Execute extends Spell {
         return !this.player.timer && this.cost <= this.player.rage && 
             (!this.swingtimer || this.player.mh.timer <= this.swingtimer) &&
             (!this.minrage || this.player.rage >= this.minrage) &&
-            (step >= this.executestep || (this.player.auras.suddendeath && this.player.auras.suddendeath.timer));
+            (step >= this.executestep || (this.player.auras.suddendeath && this.player.auras.suddendeath.timer)) &&
+            (!this.maincd || 
+            (this.player.spells.bloodthirst && this.player.spells.bloodthirst.timer >= this.maincd) || 
+            (this.player.spells.mortalstrike && this.player.spells.mortalstrike.timer >= this.maincd));
     }
 }
 
