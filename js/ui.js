@@ -539,7 +539,8 @@ SIM.UI = {
                 let span = $('<span></span>');
                 let calc = report.totaldmg / report.totalduration;
                 let diff = calc - base;
-                span.text(diff.toFixed(2));
+                let percDiff = (diff / base) * 100;
+                span.text(diff.toFixed(2) + ' (' + percDiff.toFixed(2) + '%)');
                 if (diff >= 0) span.addClass('p');
                 else span.addClass('n');
                 dps.text(calc.toFixed(2)).append(span);
